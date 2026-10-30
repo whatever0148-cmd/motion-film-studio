@@ -1,0 +1,27 @@
+{
+  "name": "empire-direct-engine",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Engine A: frame-exact Chromium renderer for Instagram Reels and launch films. No Remotion.",
+  "scripts": {
+    "smoke": "bash test/render_smoke.sh"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@fontsource/anton": "^5.3.0",
+    "@fontsource/archivo": "^5.3.0",
+    "@fontsource/caveat": "^5.3.0",
+    "@fontsource/instrument-serif": "^5.3.0",
+    "@fontsource/inter": "^5.3.0",
+    "@fontsource/inter-tight": "^5.3.0",
+    "@fontsource/jetbrains-mono": "^5.3.0",
+    "@fontsource/permanent-marker": "^5.3.0",
+    "@fontsource/space-grotesk": "^5.3.0",
+    "gsap": "^3.15.0",
+    "puppeteer-core": "^25.16.0",
+    "three": "^0.186.1"
+  }
+}

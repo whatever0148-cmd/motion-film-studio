@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Starter motion film</title>
+<link rel="stylesheet" href="/direct-engine/node_modules/@fontsource/inter-tight/600.css">
+<link rel="stylesheet" href="/direct-engine/node_modules/@fontsource/inter-tight/700.css">
+<style>
+  :root { --bg:#F3F2EC; --ink:#16171A; --accent:#C9F23A; --accent-ink:#719808; }   /* swap the palette; keep ink contrast above 4.5:1 for small text */
+  html,body{margin:0;background:var(--bg);width:1920px;height:1080px;overflow:hidden}
+  #stage{position:absolute;inset:0;width:1920px;height:1080px;overflow:hidden;font-family:'Inter Tight',sans-serif;color:var(--ink)}
+  canvas{position:absolute;left:0;top:0;width:1920px;height:1080px}
+  .hl{position:absolute;left:0;width:1920px;text-align:center;font-weight:700;font-size:120px;letter-spacing:-0.03em;line-height:1}
+  .hl .w{display:inline-block;margin:0 14px}
+  .hl .acc{color:var(--accent-ink)}
+  .card{position:absolute;left:560px;top:360px;width:800px;height:420px;border-radius:36px;background:#fff;box-shadow:0 30px 80px rgba(30,40,0,.14)}
+  .num{position:absolute;left:0;right:0;top:110px;text-align:center;font-weight:700;font-size:200px;letter-spacing:-0.04em}
+  .lab{position:absolute;left:0;right:0;top:330px;text-align:center;font-weight:600;font-size:56px;color:#55575d}
+  .orb{position:absolute;left:0;top:0;width:60px;height:60px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#fff,var(--accent) 45%,#9bc41a);box-shadow:0 12px 24px rgba(30,40,0,.25)}
+</style></head>
+<body><div id="stage">
+  <canvas id="bg" width="1920" height="1080"></canvas>
+  <div class="hl" id="h1" style="top:430px" data-safe="text"></div>
+  <div class="card" id="card"><div class="num" id="num" data-safe="text">0</div><div class="lab" data-safe="text">minutes saved per video</div></div>
+  <div class="hl" id="h3" style="top:470px" data-safe="text"></div>
+  <div class="orb" id="orb"></div>
+</div>
+<script src="/direct-engine/runtime/engine-runtime.js"></script>
+<script src="main.js"></script>
+</body></html>
